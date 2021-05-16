@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css?{{cache_id}}">
     <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?{{cache_id}}">
     <link rel="icon" href="../static/images/icon.png" />
-    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
-    <SCRIPT src="../static/scripts/1-hbnb.js?{{cache_id}}"></SCRIPT>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../static/scripts/1-hbnb.js?{{cache_id}}"></script>
 
     <title>HBnB</title>
   </head>
@@ -26,7 +26,7 @@
 	    <ul>
 	      {% for state in states %}
 	      <li>
-		<INPUT type="checkbox", data-id=":amenity_id", data-name=":amenity_name" >
+		<input type="checkbox", data-id=":amenity_id", data-name=":amenity_name" />
 		<h2>{{ state[0].name }}:</h2>
 		<ul>
 		  {% for city in state[1] %}
@@ -45,7 +45,7 @@
 	    <ul>
 	      {% for amenity in amenities %}
 	      <li>
-		<INPUT type="checkbox", data-id=":amenity_id", data-name=":amenity_name\" >>
+		<input type="checkbox", data-id=":amenity_id", data-name=":amenity_name" />
 		{{ amenity.name }}
 	      </li>
 	      {% endfor %}
